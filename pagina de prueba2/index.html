@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="envio.php" method="post" target="_blank">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="user" size="tamaño" 
+        name="nombre" placeholder="escribe aqui tu usuario" maxlength="10" minlength="4" required>
+        <small>Es obligatorio este campo</small>
+        <br>
+        <label for="Contraseña">Contraseña:</label>
+        <input type="password" id="password" size="tamaño" 
+        name="password" placeholder="escribe aqui tu Contraseña">
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones"> esta de acuerdo con las condiciones del contrato?
+        <br>
+        <input type="checkbox" name="lenguajes" value="html"> HTML
+        <input type="checkbox" name="lenguajes" value="css"> CSS
+        <input type="checkbox" name="lenguajes" value="javascript"> JAVASCRIPT
+        <input type="checkbox" name="lenguajes" value="python"> PHYTON
+        <br>
+        <input type="radio" name="lenguajes" value="html"> HTML
+        <input type="radio" name="lenguajes" value="css"> CSS
+        <input type="radio" name="lenguajes" value="javascript"> JAVASCRIPT
+        <input type="radio" name="lenguajes" value="python"> PHYTON
+        <br>
+        <label for="programar">Años Programando:</label>
+        <input type="number" id="user" size="tamaño" 
+        name="nombre" placeholder="años programando">
+        <br>
+        <label for="archivo">subi tu curriculum:</label>
+        <input type="file" id="archivo" size="tamaño" 
+        name="archivo" value="file">
+        <br>
+        <label for="opinion">agrega tu opinion:</label>
+        <textarea type="file" id="opinion" size="tamaño" 
+        name="opinion" placeholder="escribi tu opinion" rows="10" cols="50"></textarea>
+        <br>
+        <label for="Pais">selecciona tu pais de origen:</label>
+        <select name="pais" id="pais">
+            <optgroup label="America">
+                <option value="argentina">Argentina</option>
+                <option value="Mexico">Mexico</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="Francia">Francia</option>
+                <option value="Marruecos"selected="selected">Marruecos</option>
+                <option value="Croacia">Croacia</option>
+            </optgroup>
+       
+            
+        </select>
+        <br>
+        <br>
+        <input type="button" value="enviar tus datos"> ya no se utiliza se usa submit
+        <br>
+        <input type="submit" value="enviar tus datos"> submit
+        <input type="reset" value="Resetear tus datos">
+        <br>
+        <br>
+        <input type="button" onclick="alert(anotate en mis clases)" value="saludando">
+
+        <br>
+        <br>
+
+        <label for="Fecha">Fecha de ingreso laboral</label>
+        <input type="date" id="Fecha" name="fecha" max="2023-04-13">
+        <br>
+        <br>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" max="2000-01-01">
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
